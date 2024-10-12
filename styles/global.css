@@ -1,0 +1,204 @@
+/* Header Styling */
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-dropdown select {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.nav-open {
+    display: flex; 
+  }
+
+  .toggle {
+    display: block; 
+  }
+
+  .hamburger-icon {
+    display: flex; 
+  }
+
+  .icons {
+    flex-direction: row-reverse; 
+  }
+
+  .language-dropdown {
+    display: none; 
+  }
+}
+
+
+
+.container {
+  text-align: center; 
+}
+
+
+/* Main Content Styles */
+main {
+  padding: 40px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold; 
+}
+
+p {
+  font-size: 18px; 
+  color: #555;
+  margin-bottom: 40px; 
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+}
+
+footer a {
+  color: #ddd; 
+  text-decoration: none; 
+  margin: 0 10px; 
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff; 
+}
+
+
+/* General Layout */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr; 
+  gap: 20px;
+}
+
+
+.filter-menu {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-count {
+  font-weight: bold;
+}
+
+.hide-filter {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.filter-section {
+  margin-top: 10px;
+}
+
+.filter-label {
+  display: block;
+  margin: 10px 0;
+}
+
+.filter-dropdown {
+  margin-top: 10px;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 5px;
+}
+
+
+.product-list {
+  background-color: #fff;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.sort-dropdown {
+  margin-bottom: 5px;
+}
+.sort-dropdown-wrapper {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+

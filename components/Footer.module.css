@@ -1,0 +1,127 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.newsletter,
+.contact,
+.currency,
+.links,
+.quickLinks,
+.social {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.links,
+.quickLinks {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-start; 
+}
+
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe input {
+    padding: 8px;
+    flex: 1;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribe button {
+    padding: 8px 16px;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.payment {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paymentIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .newsletter,
+    .contact,
+    .currency,
+    .links,
+    .quickLinks,
+    .social {
+        margin: 10px auto; 
+        flex: 1 1 100%;
+    }
+
+    .subscribe {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .subscribe input {
+        margin-bottom: 10px; 
+        width: 100%; 
+    }
+
+    .subscribe button {
+        width: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer h4 {
+        font-size: 14px; 
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .payment {
+        margin-top: 15px; 
+    }
+}
